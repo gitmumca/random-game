@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2048</title>
+
+  <link rel="stylesheet" href="style.css" />    
+  <link rel="stylesheet" href="icons.css">
+
+	<link rel="icon" href="favicon.png"/> 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="winner">GAME OVER! Сongratulations! You are a winner!</div>
+  </header>
+
+  <div class="main">
+    <div class="title">
+      <div class="flex-title">
+        <h1>2048</h1>
+        <div class="score">score 0</div>
+<!--        <div class="score test">111</div>   -->
+        <button class="new_game">new game</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="grid_body">
+        <div class="body_item">
+          <div class="border" id="00"></div></div>      
+        <div class="body_item">
+          <div class="border" id="01"></div></div>      
+        <div class="body_item">
+          <div class="border" id="02"></div></div>      
+        <div class="body_item">
+          <div class="border" id="03"></div></div>      
+        <div class="body_item">
+          <div class="border" id="10"></div></div>      
+        <div class="body_item">
+          <div class="border" id="11">2</div></div>
+        <div class="body_item">
+          <div class="border" id="12"></div></div>      
+        <div class="body_item">
+          <div class="border" id="13"></div></div>      
+        <div class="body_item">
+          <div class="border" id="20"></div></div>      
+        <div class="body_item">
+          <div class="border" id="21"></div></div>      
+        <div class="body_item">
+          <div class="border" id="22"></div></div>      
+        <div class="body_item">
+          <div class="border" id="23"></div></div>      
+        <div class="body_item">
+          <div class="border" id="30"></div></div>      
+        <div class="body_item">
+          <div class="border" id="31"></div></div>      
+        <div class="body_item">
+          <div class="border" id="32"></div></div>      
+        <div class="body_item">
+          <div class="border" id="33"></div></div>      
+      </div> 
+
+      <div class="grid_list">
+        <div class="list_item best">THE BEST SCORE</div>  
+        <div class="list_item"></div>  
+        <div class="list_item color" id="score00"></div>  
+        <div class="list_item color" id="score01"></div>  
+        <div class="list_item" id="score10"></div>  
+        <div class="list_item" id="score11"></div>  
+        <div class="list_item color" id="score20"></div>  
+        <div class="list_item color" id="score21"></div>  
+        <div class="list_item" id="score30"></div>  
+        <div class="list_item" id="score31"></div>  
+        <div class="list_item color" id="score40"></div>  
+        <div class="list_item color" id="score41"></div>  
+        <div class="list_item" id="score50"></div>  
+        <div class="list_item" id="score51"></div>  
+        <div class="list_item color" id="score60"></div>  
+        <div class="list_item color" id="score61"></div>  
+        <div class="list_item" id="score70"></div>  
+        <div class="list_item" id="score71"></div>  
+        <div class="list_item color" id="score80"></div>  
+        <div class="list_item color" id="score81"></div>  
+        <div class="list_item" id="score90"></div>  
+        <div class="list_item" id="score91"></div>  
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <footer>
+
+    <nav class="flex-footer">
+
+      <div class="flex-git">
+        <h5 class="a-year">©</h5>
+        <h5 class="a-year">2022</h5>
+        <a class="a-git" href="https://github.com/gitmumca" target="blank">@gitmumca</a>
+      </div>
+
+      <a class="a-school" href="https://rs.school/js/" target="blank">Rolling Scopes School</a>
+
+      <div class="flex-social">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-pinterest"></i>
+      </div>
+
+    </nav>
+
+  </footer>
+
+  <script src="script.js"></script>  
+
+</body>
+</html>
