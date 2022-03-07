@@ -196,7 +196,7 @@ body {
 
 h1 {
   font-family: inherit;
-  font-size: 60px;
+  font-size: 40px;
   text-align: left;
   color: var(--search-color);
 }
@@ -358,3 +358,4 @@ footer{
   color: var(--search-color);
   border-width: 1px;
 }
+
