@@ -126,7 +126,7 @@ html {
 }
 
 .winner {
-  width: 200px;
+  width: 320px;
   height: 30px;
 
   background-color: var(--light-color);
@@ -134,7 +134,7 @@ html {
   box-shadow: 0 1px 3px var(--font-lightgreen);
   
   text-align: center;
-  margin: 20px;
+  margin: 5px 0 0 40px;
   padding: 7px 0;
 
   visibility: hidden;
@@ -145,9 +145,12 @@ html {
 }
 
 body {
+  max-width: 1280px;
+
   background-color: var(--dark-color);
   font-family: 'Poppins', sans-serif;
-  margin: 0;
+
+  margin: 0 auto;
 }
 
 .main {
@@ -275,8 +278,10 @@ h1 {
   padding: 10px;
 }
 
-.best {
+.best,
+.list-rules li:nth-child(1) {
 /*  box-shadow: 0 1px 3px var(--search-color);*/
+  text-transform: uppercase;
   font-weight: bold;
   color: var(--search-color);  
 }
@@ -359,3 +364,29 @@ footer{
   border-width: 1px;
 }
 
+@media (max-width: 450px) {
+  .grid_body {
+    display: grid;
+    grid-template-columns: 70px 70px 70px 70px;
+    grid-template-rows: 70px 70px 70px 70px;
+    border: 5px solid rgba(255, 255, 255, 0.2); 
+
+  /*  margin: 10px 0 0 37%; 
+    margin: 10px 0 0 0; */
+
+    width: 290px;
+    height: 290px;
+  }
+
+  .body_item {
+    font-size: 20px;
+  }
+
+  .border {
+    width: 60px;
+    height: 60px;
+    padding: 20px 10px;
+    text-align: center;*/
+  }
+
+}
