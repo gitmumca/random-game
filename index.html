@@ -21,12 +21,12 @@
 </head>
 
 <body>
-
+<!--
   <header class="header">
-    <div class="winner">GAME OVER! Сongratulations! You are a winner!</div>
   </header>
-
+-->
   <div class="main">
+
     <div class="title">
       <div class="flex-title">
         <h1>2048</h1>
@@ -34,74 +34,90 @@
 <!--        <div class="score test">111</div>   -->
         <button class="new_game">new game</button>
       </div>
+      <div class="winner">GAME OVER! Сongratulations! You are a winner!</div>
     </div>
 
     <div class="container">
-      <div class="grid_body">
-        <div class="body_item">
-          <div class="border" id="00"></div></div>      
-        <div class="body_item">
-          <div class="border" id="01"></div></div>      
-        <div class="body_item">
-          <div class="border" id="02"></div></div>      
-        <div class="body_item">
-          <div class="border" id="03"></div></div>      
-        <div class="body_item">
-          <div class="border" id="10"></div></div>      
-        <div class="body_item">
-          <div class="border" id="11">2</div></div>
-        <div class="body_item">
-          <div class="border" id="12"></div></div>      
-        <div class="body_item">
-          <div class="border" id="13"></div></div>      
-        <div class="body_item">
-          <div class="border" id="20"></div></div>      
-        <div class="body_item">
-          <div class="border" id="21"></div></div>      
-        <div class="body_item">
-          <div class="border" id="22"></div></div>      
-        <div class="body_item">
-          <div class="border" id="23"></div></div>      
-        <div class="body_item">
-          <div class="border" id="30"></div></div>      
-        <div class="body_item">
-          <div class="border" id="31"></div></div>      
-        <div class="body_item">
-          <div class="border" id="32"></div></div>      
-        <div class="body_item">
-          <div class="border" id="33"></div></div>      
-      </div> 
-
-      <div class="grid_list">
-        <div class="list_item best">THE BEST SCORE</div>  
-        <div class="list_item"></div>  
-        <div class="list_item color" id="score00"></div>  
-        <div class="list_item color" id="score01"></div>  
-        <div class="list_item" id="score10"></div>  
-        <div class="list_item" id="score11"></div>  
-        <div class="list_item color" id="score20"></div>  
-        <div class="list_item color" id="score21"></div>  
-        <div class="list_item" id="score30"></div>  
-        <div class="list_item" id="score31"></div>  
-        <div class="list_item color" id="score40"></div>  
-        <div class="list_item color" id="score41"></div>  
-        <div class="list_item" id="score50"></div>  
-        <div class="list_item" id="score51"></div>  
-        <div class="list_item color" id="score60"></div>  
-        <div class="list_item color" id="score61"></div>  
-        <div class="list_item" id="score70"></div>  
-        <div class="list_item" id="score71"></div>  
-        <div class="list_item color" id="score80"></div>  
-        <div class="list_item color" id="score81"></div>  
-        <div class="list_item" id="score90"></div>  
-        <div class="list_item" id="score91"></div>  
+      <div class="cont-grid">
+        <div class="grid_body">
+          <div class="body_item">
+            <div class="border" id="00"></div></div>      
+          <div class="body_item">
+            <div class="border" id="01"></div></div>      
+          <div class="body_item">
+            <div class="border" id="02"></div></div>      
+          <div class="body_item">
+            <div class="border" id="03"></div></div>      
+          <div class="body_item">
+            <div class="border" id="10"></div></div>      
+          <div class="body_item">
+            <div class="border" id="11">2</div></div>
+          <div class="body_item">
+            <div class="border" id="12"></div></div>      
+          <div class="body_item">
+            <div class="border" id="13"></div></div>      
+          <div class="body_item">
+            <div class="border" id="20"></div></div>      
+          <div class="body_item">
+            <div class="border" id="21"></div></div>      
+          <div class="body_item">
+            <div class="border" id="22"></div></div>      
+          <div class="body_item">
+            <div class="border" id="23"></div></div>      
+          <div class="body_item">
+            <div class="border" id="30"></div></div>      
+          <div class="body_item">
+            <div class="border" id="31"></div></div>      
+          <div class="body_item">
+            <div class="border" id="32"></div></div>      
+          <div class="body_item">
+            <div class="border" id="33"></div></div>      
+        </div> 
       </div>
 
+      <div class="cont-list">
+        <div class="grid_list">
+          <div class="list_item best">THE BEST SCORE</div>  
+          <div class="list_item"></div>  
+          <div class="list_item color" id="score00"></div>  
+          <div class="list_item color" id="score01"></div>  
+          <div class="list_item" id="score10"></div>  
+          <div class="list_item" id="score11"></div>  
+          <div class="list_item color" id="score20"></div>  
+          <div class="list_item color" id="score21"></div>  
+          <div class="list_item" id="score30"></div>  
+          <div class="list_item" id="score31"></div>  
+          <div class="list_item color" id="score40"></div>  
+          <div class="list_item color" id="score41"></div>  
+          <div class="list_item" id="score50"></div>  
+          <div class="list_item" id="score51"></div>  
+          <div class="list_item color" id="score60"></div>  
+          <div class="list_item color" id="score61"></div>  
+          <div class="list_item" id="score70"></div>  
+          <div class="list_item" id="score71"></div>  
+          <div class="list_item color" id="score80"></div>  
+          <div class="list_item color" id="score81"></div>  
+          <div class="list_item" id="score90"></div>  
+          <div class="list_item" id="score91"></div>  
+        </div>
+      </div>
+
+      <div class="rules">
+        <ul class="list-rules">
+          <li>Правила игры:</li>
+          <li>1. В каждом раунде появляется плитка номинала «2» или «4»</li>
+          <li>2. Нажатием стрелки игрок может скинуть все плитки игрового поля в одну из 4 сторон. Если при сбрасывании две плитки одного номинала «налетают» одна на другую, то они превращаются в одну, номинал которой равен сумме соединившихся плиток. После каждого хода на свободной секции поля появляется новая плитка номиналом «2» или «4». Если при нажатии кнопки местоположение плиток или их номинал не изменится, то ход не совершается</li>
+          <li>3. Если в одной строчке или в одном столбце находится более двух плиток одного номинала, то при сбрасывании они начинают соединяться с той стороны, в которую были направлены. Например, находящиеся в одной строке плитки (4, 4, 4) после хода влево превратятся в (8, 4), а после хода вправо — в (4, 8)</li>
+          <li>4. За каждое соединение игровые очки увеличиваются на номинал получившейся плитки</li>
+          <li>5. Игра заканчивается поражением, если после очередного хода невозможно совершить действие</li>
+        </ul>
+      </div>
 
     </div>
 
   </div>
 
+<!--
   <footer>
 
     <nav class="flex-footer">
@@ -124,7 +140,7 @@
     </nav>
 
   </footer>
-
+-->
   <script src="script.js"></script>  
 
 </body>

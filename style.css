@@ -126,7 +126,7 @@ html {
 }
 
 .winner {
-  width: 400px;
+  width: 200px;
   height: 30px;
 
   background-color: var(--light-color);
@@ -150,10 +150,16 @@ body {
   margin: 0;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .title {
   display: flex;
-  justify-content: center;
-  padding: 30px 0 0 0;
+  flex-wrap: wrap;
+  padding: 20px 20px 0;
   margin: 0;
 }
 
@@ -197,33 +203,28 @@ h1 {
 
 .container {
   display: flex;
-  margin: 20px 0 0 0;
+  flex-wrap: wrap;
+/*  justify-content: space-between;*/
+
+  margin: 0;
 }
 
-.grid_list {
-  display: grid;
-
-  grid-template-columns: 200px 50px;
-  grid-template-rows: 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px;
-  margin: 0 auto 0 100px; 
-  width: 250px;
-}
-
-.list_item {
-/*  border: 1px solid rgba(255, 255, 255, 0.2);*/
-  font-size: 15px;
-  color: lightgreen;
+.rules {
+  width: 400px;
   padding: 10px;
 }
 
-.best {
-/*  box-shadow: 0 1px 3px var(--search-color);*/
-  font-weight: bold;
-  color: var(--search-color);  
+.list-rules {
+/*  width: 25%;*/
+  color: var(--search-color);
 }
 
-.color {
-  color: lightskyblue;  
+.list-rules li {
+  margin: 10px;
+}
+
+.cont-grid {
+  padding: 20px;
 }
 
 .grid_body {
@@ -231,7 +232,10 @@ h1 {
   grid-template-columns: 100px 100px 100px 100px;
   grid-template-rows: 100px 100px 100px 100px;
   border: 5px solid rgba(255, 255, 255, 0.2); 
-  margin: 10px 0 0 37%; 
+
+/*  margin: 10px 0 0 37%; 
+  margin: 10px 0 0 0; */
+
   width: 410px;
   height: 410px;
 }
@@ -251,10 +255,34 @@ h1 {
   text-align: center;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.cont-list {
+  padding: 10px;
+}
+
+.grid_list {
+  display: grid;
+
+  grid-template-columns: 170px 50px;
+  grid-template-rows: 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px;
+/*  margin: 0 auto 0 100px; */
+/*  width: 220px;*/
+}
+
+.list_item {
+/*  border: 1px solid rgba(255, 255, 255, 0.2);*/
+  font-size: 15px;
+  color: lightgreen;
+  padding: 10px;
+}
+
+.best {
+/*  box-shadow: 0 1px 3px var(--search-color);*/
+  font-weight: bold;
+  color: var(--search-color);  
+}
+
+.color {
+  color: lightskyblue;  
 }
 
 footer{
