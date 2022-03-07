@@ -224,10 +224,11 @@ h1 {
 
 .list-rules li {
   margin: 10px;
+  text-align: justify;
 }
 
 .cont-grid {
-  padding: 20px;
+  padding: 10px 20px 0;
 }
 
 .grid_body {
@@ -258,7 +259,72 @@ h1 {
   text-align: center;
 }
 
+.buttons {
+/*  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  height: 410px;*/
+  padding: 10px;
+}
+
+.button {
+  display: block;
+
+  width: 40px;
+  height: 40px;
+  background-color: var(--light-color);
+  border: 2px solid rgba(255, 255, 255, 0.2); 
+  color: lightgreen;
+
+  font-size: 20px;
+  font-weight: 600;
+
+  margin: 3px auto;
+}
+
+.left-right {
+  display: flex;
+  width: 200px;
+  margin: 3px auto;
+}
+/*
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+*/
+.fa-up-long::before {
+  font-size: 25px;
+  color: #fff;
+  content: "\f30c";
+  font-family: "FontAwesome";
+}
+
 .cont-list {
+/*  flex-direction: ;*/
   padding: 10px;
 }
 
@@ -290,7 +356,7 @@ h1 {
   color: lightskyblue;  
 }
 
-footer{
+footer {
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -371,11 +437,14 @@ footer{
     grid-template-rows: 70px 70px 70px 70px;
     border: 5px solid rgba(255, 255, 255, 0.2); 
 
-  /*  margin: 10px 0 0 37%; 
-    margin: 10px 0 0 0; */
-
     width: 290px;
     height: 290px;
+  }
+
+  .cont-grid,
+  .rules,
+  .cont-list {
+    margin: 0 auto;
   }
 
   .body_item {
@@ -388,5 +457,11 @@ footer{
     padding: 20px 10px;
     text-align: center;*/
   }
+/*
+  .buttons {
+    height: 290px;
+    padding: 0 30px;
+  }
+*/
 
 }

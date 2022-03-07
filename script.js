@@ -239,8 +239,43 @@ function checkKey(e) {
   }
 }
 
-const new_game = document.querySelector('.new_game');
+const btn_up = document.querySelector('.up');
+btn_up.addEventListener('click', function() {
+  moveAll(up);
+  playSound(7);
+  refreshField();
+  addNumber(2);
+  refreshField();
+});
 
+const btn_right = document.querySelector('.right');
+btn_right.addEventListener('click', function() {
+    moveAll(right);
+    playSound(2);
+    refreshField();
+    addNumber(2);
+    refreshField();
+});
+
+const btn_left = document.querySelector('.left');
+btn_left.addEventListener('click', function() {
+  moveAll(left);
+  playSound(7);
+  refreshField();
+  addNumber(2);
+  refreshField();
+});
+
+const btn_down = document.querySelector('.down');
+btn_down.addEventListener('click', function() {
+  moveAll(down);
+  playSound(7);
+  refreshField();
+  addNumber(2);
+  refreshField();
+});
+
+const new_game = document.querySelector('.new_game');
 new_game.addEventListener('click', function() {
   field = [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]];
   score = 0;
