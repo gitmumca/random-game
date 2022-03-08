@@ -126,7 +126,7 @@ html {
 }
 
 .winner {
-  width: 320px;
+  width: 180px;
   height: 30px;
 
   background-color: var(--light-color);
@@ -174,7 +174,7 @@ body {
 }
 
 .new_game {
-  width: 100px;
+  width: 90px;
   height: 30px;
   text-align: center;
 
@@ -184,7 +184,7 @@ body {
 }
 
 .score {
-  width: 110px;
+  width: 90px;
   height: 30px;
 
   font-size: 15px;
@@ -455,7 +455,11 @@ footer {
     width: 60px;
     height: 60px;
     padding: 20px 10px;
-    text-align: center;*/
+    text-align: center;
+  }
+
+  .winner {
+    margin: 5px auto 0;
   }
 /*
   .buttons {
