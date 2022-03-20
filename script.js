@@ -91,7 +91,8 @@ function refreshField() {
 function getRandomIntInclusive(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min; //Максимум и минимум включаются
+  return Math.floor(Math.random() * (max - min + 1)) + min; 
+  //Максимум и минимум включаются
 }
 
 // coef - в начале игры первое значение только 2
@@ -241,6 +242,10 @@ function checkKey(e) {
 
 const btn_up = document.querySelector('.up');
 btn_up.addEventListener('click', function() {
+
+  if (game_off == true) {return;}
+  refreshListScore();
+
   moveAll(up);
   playSound(7);
   refreshField();
@@ -250,15 +255,23 @@ btn_up.addEventListener('click', function() {
 
 const btn_right = document.querySelector('.right');
 btn_right.addEventListener('click', function() {
-    moveAll(right);
-    playSound(2);
-    refreshField();
-    addNumber(2);
-    refreshField();
+
+  if (game_off == true) {return;}
+  refreshListScore();
+
+  moveAll(right);
+  playSound(2);
+  refreshField();
+  addNumber(2);
+  refreshField();
 });
 
 const btn_left = document.querySelector('.left');
 btn_left.addEventListener('click', function() {
+
+  if (game_off == true) {return;}
+  refreshListScore();
+
   moveAll(left);
   playSound(7);
   refreshField();
@@ -268,6 +281,10 @@ btn_left.addEventListener('click', function() {
 
 const btn_down = document.querySelector('.down');
 btn_down.addEventListener('click', function() {
+  
+  if (game_off == true) {return;}
+  refreshListScore();
+
   moveAll(down);
   playSound(7);
   refreshField();
