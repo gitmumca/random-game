@@ -3,7 +3,7 @@ var up = 0, right = 1, down = 2, left = 3;
 var flag;
 var score = 0;
 
-var win = 1;
+var win = 1; 
 var lost = 0;
 var game_off = false;
 
